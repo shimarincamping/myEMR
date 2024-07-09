@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'AvenirNext LT Pro Regular';
+    src: url("AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro Bold';
+    src: url("AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+    font-family: 'AvenirNextLTW02-BoldItalic';
+    src: url("AvenirNextLTPro-BoldItalic.otf");
+}
+
+* {
+    -accentcolor: #1D9BF0;
+    -basecolor: #FFFFFF;
+    -accenthover: #47ADF3;
+    -basehover: #E6E6E6;
+    -disabledhover: #ff7474;
+}
+
+.button {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-family: 'AvenirNext LT Pro Bold';
+}
+
+.clickable {
+    -fx-cursor: hand;
+}
+
+.disabled {
+    -fx-opacity: 0.75;
+}
+
+.accentedColor {
+    -fx-background-color: -accentcolor;
+    -fx-text-fill: -basecolor;
+}
+
+.button.clickable.accentedColor:hover {
+    -fx-background-color: -basecolor;
+    -fx-text-fill: -accentcolor;
+}
+
+.baseColor {
+    -fx-background-color: -basecolor;
+    -fx-text-fill: -accentcolor;
+}
+
+.button.clickable.baseColor:hover {
+    -fx-background-color: -accentcolor;
+    -fx-text-fill: -basecolor;
+}
+
+.formLabel {
+    -fx-font-size: 20px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 50px;
+    -fx-padding: 7px 30px;
+}
+
+.longFormLabel {
+    -fx-font-size: 28px;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-padding: 8px 60px;
+    -fx-pref-width: 1350px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 0.0, 2.0, 2.0,  2.0);
+}
+
+.text-field {
+    -fx-font-family: 'AvenirNext LT Pro Regular';
+    -fx-border-color: -accentcolor;
+    -fx-border-width: 4px;
+}
+
+.text-field:hover {
+    -fx-border-color: -accenthover;
+}
+
+.text-field.disabled:hover {
+    -fx-border-color: -disabledhover;
+}
+
+.enlargedInput {
+    -fx-font-size: 40px;
+    -fx-pref-width: 600px;
+    -fx-padding: 29px 20px 17px 20px;
+}
+
+.oneThirdWidthInput {
+    -fx-font-size: 25px;
+    -fx-pref-width: 225px;
+    -fx-padding: 15px 10px 15px 10px;
+}
+
+.halfwidthInput {
+    -fx-font-size: 25px;
+    -fx-pref-width: 325px;
+    -fx-padding: 15px 10px 15px 10px;
+}
+
+.fullwidthInput {
+    -fx-font-size: 25px;
+    -fx-pref-width: 690px;
+    -fx-padding: 15px 10px 15px 10px;
+}
+
+.text-area {
+    -fx-font-size: 25px;
+    -fx-font-family: 'AvenirNext LT Pro Regular';
+    -fx-pref-width: 690px;
+    -fx-padding: 5px 7px 5px 7px;
+    -fx-border-color: -accentcolor;
+    -fx-border-width: 4px;
+}
+
+.text-area:hover {
+    -fx-border-color: -accenthover;
+}
+
+.textAreaShort {
+    -fx-pref-height: 240px;
+}
+
+.dataDisplay {
+    -fx-border-color: -accentcolor;
+    -fx-border-width: 4px;
+    -fx-pref-width: 1350px;
+    -fx-pref-height: 370px;
+    -fx-padding: 17px;
+}
+
+.dataDisplayText {
+    -fx-font-size: 25px;
+    -fx-font-family: 'AvenirNext LT Pro Regular';
+}
+
+.dataDisplayBold {
+    -fx-font-size: 25px;
+    -fx-font-family: 'AvenirNext LT Pro Bold';
+}
+
+.homeLargeButton {
+    -fx-pref-height: 84.6;
+    -fx-pref-width: 459.45;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-font-size: 35px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 0.0, 10.0, 10.0,  10.0);
+}
+
+.genericUIButton {
+    -fx-padding: 15px 40px;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-font-size: 28px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 0.0, 2.0, 2.0,  2.0);
+}
+
+.mainMenuButton {
+    -fx-padding: 20px 40px 20px 133px;
+    -fx-background-radius: 45px;
+    -fx-border-radius: 45px;
+    -fx-font-size: 38px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 0.0, 2.0, 2.0,  2.0);
+}
+
+.comboBox {
+    -fx-padding: 22px 240px 15px 240px;
+    -fx-background-color: -basecolor;
+    -fx-text-alignment: center;
+    -fx-font-size: 23px;
+    -fx-font-family: 'AvenirNext LT Pro';
+    -fx-text-fill: gray;
+    -fx-pref-width: 900px;
+    -fx-border-color: -accentcolor;
+    -fx-border-width: 4px;
+}
+
+.comboBoxHeader {
+    -fx-padding: 5px 238px;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-font-size: 18px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 0.0, 2.0, 2.0,  2.0);
+}
+
+.popupPane {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #1D9BF0;
+    -fx-border-width: 4px;
+    -fx-pref-width: 1536px;
+    -fx-pref-height: 714px;
+}
+
+#welcomeScreenText {
+    -fx-font-size: 38;
+    -fx-font-family: 'AvenirNextLTW02-BoldItalic';
+}
+
+#homePatientTypeLabel {
+    -fx-pref-height: 20;
+    -fx-pref-width: 300;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-font-size: 22px;
+    -fx-padding: 10px;
+}
